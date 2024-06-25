@@ -69,7 +69,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.darkmode-coeff} + ($color.grey-step) * 0.1",
+              "value": "0.615",
               "space": "hsl"
             }
           }
@@ -82,7 +82,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.darkmode-coeff} + ($color.grey-step) * 0.5",
+              "value": "0.65",
               "space": "hsl"
             }
           }
@@ -95,7 +95,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.darkmode-coeff} + ($color.grey-step) * 0.5",
+              "value": "0.75",
               "space": "hsl"
             }
           }
@@ -108,7 +108,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.darkmode-coeff} + $color.grey-step",
+              "value": "0.75",
               "space": "hsl"
             }
           }
@@ -121,7 +121,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.darkmode-coeff}  + {color.grey-step} * 1.5",
+              "value": "0.825",
               "space": "hsl"
             }
           }
@@ -134,7 +134,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.darkmode-coeff}  + {color.grey-step} * 2",
+              "value": "0.9",
               "space": "hsl"
             }
           }
@@ -147,7 +147,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.darkmode-coeff}  + {color.grey-step} * 2.5",
+              "value": "0.975",
               "space": "hsl"
             }
           }
@@ -160,7 +160,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.darkmode-coeff}  + {color.grey-step} * 5",
+              "value": "1",
               "space": "hsl"
             }
           }
@@ -174,7 +174,7 @@
             "modify": {
               "type": "darken",
               "value": "0.8",
-              "space": "lch"
+              "space": "hsl"
             }
           }
         }
@@ -186,7 +186,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.grey-step} * 2",
+              "value": "0.3",
               "space": "hsl"
             }
           }
@@ -199,7 +199,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.grey-step} * 3",
+              "value": "0.45",
               "space": "hsl"
             }
           }
@@ -212,7 +212,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.grey-step} * 4",
+              "value": "0.6",
               "space": "hsl"
             }
           }
@@ -225,16 +225,20 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.grey-step} * 5",
+              "value": "0.75",
               "space": "hsl"
             }
           }
         }
+      },
+      "base": {
+        "value": "#777",
+        "type": "color"
       }
     },
     "success": {
       "bg": {
-        "value": "$palette.success.main",
+        "value": "{palette.success.main}",
         "type": "color",
         "$extensions": {
           "studio.tokens": {
@@ -249,7 +253,7 @@
     },
     "warning": {
       "bg": {
-        "value": "$palette.warning.main",
+        "value": "{palette.warning.main}",
         "type": "color",
         "$extensions": {
           "studio.tokens": {
@@ -264,7 +268,7 @@
     },
     "error": {
       "bg": {
-        "value": "$palette.error.main",
+        "value": "{palette.error.main}",
         "type": "color",
         "$extensions": {
           "studio.tokens": {
@@ -279,7 +283,7 @@
     },
     "info": {
       "bg": {
-        "value": "$palette.info.main",
+        "value": "{palette.info.main}",
         "type": "color",
         "$extensions": {
           "studio.tokens": {

@@ -1,37 +1,39 @@
 {
-  "base": {
-    "value": "16",
-    "type": "spacing"
+  "spacing": {
+    "base": {
+      "value": "16",
+      "type": "spacing"
+    },
+    "scaleFactor": {
+      "value": "1.618",
+      "type": "spacing"
+    },
+    "xs": {
+      "value": "roundTo({spacing.base}/({const.scaleFactor}^2))",
+      "type": "spacing"
+    },
+    "sm": {
+      "value": "roundTo ( {spacing.base} / {spacing.scaleFactor} )",
+      "type": "spacing"
+    },
+    "md": {
+      "value": "{spacing.base}",
+      "type": "spacing"
+    },
+    "lg": {
+      "value": "roundTo( {spacing.base} * {spacing.scaleFactor} )",
+      "type": "spacing"
+    },
+    "xl": {
+      "value": "roundTo( {spacing.base} * {spacing.scaleFactor}^2 )",
+      "type": "spacing"
+    },
+    "xxl": {
+      "value": "roundTo( {spacing.base} * {spacing.scaleFactor}^3 )",
+      "type": "spacing"
+    }
   },
-  "scale": {
-    "value": "1.618",
-    "type": "spacing"
-  },
-  "xs": {
-    "value": "roundTo( {base} / ( {scale}^2 ))",
-    "type": "spacing"
-  },
-  "sm": {
-    "value": "roundTo( {base} / {scale} )",
-    "type": "spacing"
-  },
-  "md": {
-    "value": "{base}",
-    "type": "spacing"
-  },
-  "lg": {
-    "value": "roundTo( {base} * {scale} )",
-    "type": "spacing"
-  },
-  "xl": {
-    "value": "roundTo( {base} * {scale}^2 )",
-    "type": "spacing"
-  },
-  "xxl": {
-    "value": "roundTo( {base} * {scale}^3 )",
-    "type": "spacing"
-  },
-  "radi": {
+  "radius": {
     "xs": {
       "value": "2",
       "type": "borderRadius"
@@ -123,7 +125,7 @@
         "type": "color"
       },
       "icon-primary": {
-        "value": "$palette.primary.main",
+        "value": "{palette.primary.main}",
         "type": "color"
       },
       "icon-secondary": {
@@ -156,7 +158,7 @@
         "type": "color"
       },
       "light": {
-        "value": "$palette.primary.main",
+        "value": "{palette.primary.main}",
         "type": "color",
         "$extensions": {
           "studio.tokens": {
@@ -187,7 +189,7 @@
           "studio.tokens": {
             "modify": {
               "type": "lighten",
-              "value": "1 - ($color.grey-step) * 0.1",
+              "value": "0.95",
               "space": "hsl"
             }
           }
@@ -200,7 +202,7 @@
           "studio.tokens": {
             "modify": {
               "type": "lighten",
-              "value": "1 - ($color.grey-step) * 0.25",
+              "value": "0.93",
               "space": "hsl"
             }
           }
@@ -213,7 +215,7 @@
           "studio.tokens": {
             "modify": {
               "type": "lighten",
-              "value": "1 - ($color.grey-step) * 0.5",
+              "value": "0.92",
               "space": "hsl"
             }
           }
@@ -226,7 +228,7 @@
           "studio.tokens": {
             "modify": {
               "type": "lighten",
-              "value": "1 - $color.grey-step",
+              "value": "0.85",
               "space": "hsl"
             }
           }
@@ -239,7 +241,7 @@
           "studio.tokens": {
             "modify": {
               "type": "lighten",
-              "value": "1 - {color.grey-step} * 1.5",
+              "value": "0.78",
               "space": "hsl"
             }
           }
@@ -252,7 +254,7 @@
           "studio.tokens": {
             "modify": {
               "type": "lighten",
-              "value": "1 - {color.grey-step} * 2",
+              "value": "0.7",
               "space": "hsl"
             }
           }
@@ -265,7 +267,7 @@
           "studio.tokens": {
             "modify": {
               "type": "lighten",
-              "value": "1 - {color.grey-step} * 3",
+              "value": "0.55",
               "space": "hsl"
             }
           }
@@ -278,7 +280,7 @@
           "studio.tokens": {
             "modify": {
               "type": "lighten",
-              "value": "1 - {color.grey-step} * 5",
+              "value": "0.4",
               "space": "hsl"
             }
           }
@@ -295,7 +297,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.grey-step} * 2",
+              "value": "0.3",
               "space": "hsl"
             }
           }
@@ -308,7 +310,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.grey-step} * 3",
+              "value": "0.45",
               "space": "hsl"
             }
           }
@@ -321,7 +323,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.grey-step} * 4",
+              "value": "0.6",
               "space": "hsl"
             }
           }
@@ -334,7 +336,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.grey-step} * 5",
+              "value": "0.75",
               "space": "hsl"
             }
           }
@@ -353,7 +355,20 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.darkmode-coeff} + ($color.grey-step) * 0.1",
+              "value": "0.615",
+              "space": "hsl"
+            }
+          }
+        }
+      },
+      "25": {
+        "value": "{palette.neutral.base}",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "darken",
+              "value": "0.65",
               "space": "hsl"
             }
           }
@@ -366,7 +381,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.darkmode-coeff} + ($color.grey-step) * 0.5",
+              "value": "0.675",
               "space": "hsl"
             }
           }
@@ -379,7 +394,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.darkmode-coeff} + $color.grey-step",
+              "value": "0.75",
               "space": "hsl"
             }
           }
@@ -392,7 +407,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.darkmode-coeff}  + {color.grey-step} * 1.5",
+              "value": "0.825",
               "space": "hsl"
             }
           }
@@ -405,7 +420,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.darkmode-coeff}  + {color.grey-step} * 2",
+              "value": "0.9",
               "space": "hsl"
             }
           }
@@ -418,7 +433,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.darkmode-coeff}  + {color.grey-step} * 2.5",
+              "value": "0.975",
               "space": "hsl"
             }
           }
@@ -431,7 +446,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.darkmode-coeff}  + {color.grey-step} * 5",
+              "value": "1",
               "space": "hsl"
             }
           }
@@ -445,7 +460,7 @@
             "modify": {
               "type": "darken",
               "value": "0.8",
-              "space": "lch"
+              "space": "hsl"
             }
           }
         }
@@ -457,7 +472,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.grey-step} * 2",
+              "value": "0.3",
               "space": "hsl"
             }
           }
@@ -470,7 +485,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.grey-step} * 3",
+              "value": "0.45",
               "space": "hsl"
             }
           }
@@ -483,7 +498,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.grey-step} * 4",
+              "value": "0.6",
               "space": "hsl"
             }
           }
@@ -496,7 +511,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.grey-step} * 5",
+              "value": "0.75",
               "space": "hsl"
             }
           }
@@ -509,7 +524,7 @@
         "type": "color"
       },
       "bg": {
-        "value": "$palette.success.main",
+        "value": "{palette.success.main}",
         "type": "color",
         "$extensions": {
           "studio.tokens": {
@@ -528,7 +543,7 @@
         "type": "color"
       },
       "bg": {
-        "value": "$palette.warning.main",
+        "value": "{palette.warning.main}",
         "type": "color",
         "$extensions": {
           "studio.tokens": {
@@ -547,7 +562,7 @@
         "type": "color"
       },
       "bg": {
-        "value": "$palette.error.main",
+        "value": "{palette.error.main}",
         "type": "color",
         "$extensions": {
           "studio.tokens": {
@@ -566,7 +581,7 @@
         "type": "color"
       },
       "bg": {
-        "value": "$palette.info.main",
+        "value": "{palette.info.main}",
         "type": "color",
         "$extensions": {
           "studio.tokens": {
@@ -912,14 +927,6 @@
       "description": "Shadows.xl-bottom - use for sticky footers"
     }
   },
-  "Card": {
-    "value": {
-      "fill": "{palette.common.white}",
-      "borderRadius": "{radi.md}",
-      "boxShadow": "{shadows.md}"
-    },
-    "type": "composition"
-  },
   "fontSize": {
     "xs": {
       "value": "11",
@@ -944,35 +951,13 @@
       "type": "fontSizes"
     }
   },
-  "fontWeight": {
-    "light": {
-      "value": "Light",
-      "type": "fontWeights"
-    },
-    "regular": {
-      "value": "Regular",
-      "type": "fontWeights"
-    },
-    "medium": {
-      "value": "Medium",
-      "type": "fontWeights"
-    },
-    "semibold": {
-      "value": "Semibold",
-      "type": "fontWeights"
-    },
-    "bold": {
-      "value": "Bold",
-      "type": "fontWeights"
-    }
-  },
   "typography": {
     "body": {
       "B1": {
         "value": {
           "fontFamily": "{fontFamily.body}",
-          "fontWeight": "{fontWeight.regular}",
-          "lineHeight": "{lineHeight.body}",
+          "fontWeight": "Regular",
+          "lineHeight": "20px",
           "fontSize": "{fontSize.md}"
         },
         "type": "typography"
@@ -980,8 +965,8 @@
       "B1 Underlined": {
         "value": {
           "fontFamily": "{fontFamily.body}",
-          "fontWeight": "{fontWeight.regular}",
-          "lineHeight": "{lineHeight.body}",
+          "fontWeight": "Regular",
+          "lineHeight": "20px",
           "fontSize": "{fontSize.md}",
           "textDecoration": "underline"
         },
@@ -990,8 +975,8 @@
       "B1 Medium": {
         "value": {
           "fontFamily": "{fontFamily.body}",
-          "fontWeight": "{fontWeight.medium}",
-          "lineHeight": "{lineHeight.body}",
+          "fontWeight": "Medium",
+          "lineHeight": "20px",
           "fontSize": "{fontSize.md}"
         },
         "type": "typography"
@@ -999,8 +984,8 @@
       "B1 Medium Underline": {
         "value": {
           "fontFamily": "{fontFamily.body}",
-          "fontWeight": "{fontWeight.medium}",
-          "lineHeight": "{lineHeight.body}",
+          "fontWeight": "Medium",
+          "lineHeight": "20px",
           "fontSize": "{fontSize.md}",
           "textDecoration": "underline"
         },
@@ -1009,8 +994,8 @@
       "B1 SemiBold": {
         "value": {
           "fontFamily": "{fontFamily.body}",
-          "fontWeight": "{fontWeight.semibold}",
-          "lineHeight": "{lineHeight.body}",
+          "fontWeight": "Semibold",
+          "lineHeight": "20px",
           "fontSize": "{fontSize.md}"
         },
         "type": "typography"
@@ -1018,38 +1003,28 @@
       "B1 SemiBold Underline": {
         "value": {
           "fontFamily": "{fontFamily.body}",
-          "fontWeight": "{fontWeight.semibold}",
-          "lineHeight": "{lineHeight.body}",
+          "fontWeight": "Semibold",
+          "lineHeight": "20px",
           "fontSize": "{fontSize.md}",
           "textDecoration": "underline"
-        },
-        "type": "typography"
-      },
-      "B1 Mono": {
-        "value": {
-          "fontFamily": "{fontFamily.mono-azeret}",
-          "fontWeight": "{fontWeight.regular}",
-          "lineHeight": "{lineHeight.body}",
-          "fontSize": "{fontSize.md}",
-          "letterSpacing": "-5%"
         },
         "type": "typography"
       },
       "B2": {
         "value": {
           "fontFamily": "{fontFamily.body}",
-          "fontWeight": "{fontWeight.regular}",
+          "fontWeight": "Regular",
           "fontSize": "{fontSize.sm}",
-          "lineHeight": "{lineHeight.body}"
+          "lineHeight": "20px"
         },
         "type": "typography"
       },
       "B2 Underline": {
         "value": {
           "fontFamily": "{fontFamily.body}",
-          "fontWeight": "{fontWeight.regular}",
+          "fontWeight": "Regular",
           "fontSize": "{fontSize.sm}",
-          "lineHeight": "{lineHeight.body}",
+          "lineHeight": "20px",
           "textDecoration": "underline"
         },
         "type": "typography"
@@ -1057,25 +1032,25 @@
       "B2 Medium": {
         "value": {
           "fontFamily": "{fontFamily.body}",
-          "fontWeight": "{fontWeight.medium}",
+          "fontWeight": "Medium",
           "fontSize": "{fontSize.sm}",
-          "lineHeight": "{lineHeight.body}"
+          "lineHeight": "20px"
         },
         "type": "typography"
       },
       "B2 SemiBold": {
         "value": {
           "fontFamily": "{fontFamily.body}",
-          "fontWeight": "{fontWeight.semibold}",
+          "fontWeight": "Semibold",
           "fontSize": "{fontSize.sm}",
-          "lineHeight": "{lineHeight.body}"
+          "lineHeight": "20px"
         },
         "type": "typography"
       },
       "B3": {
         "value": {
           "fontFamily": "{fontFamily.body}",
-          "fontWeight": "{fontWeight.medium}",
+          "fontWeight": "Medium",
           "fontSize": "{fontSize.xs}",
           "lineHeight": "120%"
         },
@@ -1084,7 +1059,7 @@
       "B3 SemiBold": {
         "value": {
           "fontFamily": "{fontFamily.body}",
-          "fontWeight": "{fontWeight.semibold}",
+          "fontWeight": "Semibold",
           "fontSize": "{fontSize.xs}",
           "lineHeight": "120%"
         },
@@ -1095,8 +1070,8 @@
       "H1": {
         "value": {
           "fontFamily": "{fontFamily.headings}",
-          "fontWeight": "{fontWeight.bold}",
-          "lineHeight": "{lineHeight.headings}",
+          "fontWeight": "Bold",
+          "lineHeight": "20px",
           "fontSize": "{fontSize.xl}"
         },
         "type": "typography"
@@ -1104,8 +1079,8 @@
       "H2": {
         "value": {
           "fontFamily": "{fontFamily.headings}",
-          "fontWeight": "{fontWeight.bold}",
-          "lineHeight": "{lineHeight.headings}",
+          "fontWeight": "Bold",
+          "lineHeight": "20px",
           "fontSize": "{fontSize.lg}"
         },
         "type": "typography"
@@ -1113,34 +1088,12 @@
       "H3": {
         "value": {
           "fontFamily": "{fontFamily.headings}",
-          "fontWeight": "{fontWeight.bold}",
+          "fontWeight": "Bold",
           "lineHeight": "20",
           "fontSize": "{fontSize.md}"
         },
         "type": "typography"
       }
-    },
-    "special": {
-      "input-big": {
-        "value": {
-          "fontFamily": "{fontFamily.mono}",
-          "fontWeight": "{fontWeight.regular}",
-          "lineHeight": "100%",
-          "fontSize": "{fontSize.lg}",
-          "letterSpacing": "1%"
-        },
-        "type": "typography"
-      }
-    }
-  },
-  "lineHeight": {
-    "headings": {
-      "value": "120%",
-      "type": "lineHeights"
-    },
-    "body": {
-      "value": "150%",
-      "type": "lineHeights"
     }
   },
   "fontFamily": {
@@ -1150,14 +1103,6 @@
     },
     "headings": {
       "value": "Proxima Nova",
-      "type": "fontFamilies"
-    },
-    "mono": {
-      "value": "Roboto Mono",
-      "type": "fontFamilies"
-    },
-    "mono-azeret": {
-      "value": "Azeret Mono",
       "type": "fontFamilies"
     }
   },
@@ -1177,14 +1122,18 @@
       "type": "other"
     }
   },
-  "color": {
-    "grey-step": {
-      "value": "0.15",
-      "type": "other"
-    },
-    "darkmode-coeff": {
-      "value": "0.6",
+  "darkmodeCoeff": {
+    "value": "0.6",
+    "type": "other"
+  },
+  "const": {
+    "scaleFactor": {
+      "value": "1.618",
       "type": "other"
     }
+  },
+  "greyStep": {
+    "value": "0.15",
+    "type": "other"
   }
 }
