@@ -1,38 +1,4 @@
 {
-  "spacing": {
-    "base": {
-      "value": "16",
-      "type": "spacing"
-    },
-    "scaleFactor": {
-      "value": "1.618",
-      "type": "spacing"
-    },
-    "xs": {
-      "value": "roundTo({spacing.base}/({const.scaleFactor}^2))",
-      "type": "spacing"
-    },
-    "sm": {
-      "value": "roundTo ( {spacing.base} / {spacing.scaleFactor} )",
-      "type": "spacing"
-    },
-    "md": {
-      "value": "{spacing.base}",
-      "type": "spacing"
-    },
-    "lg": {
-      "value": "roundTo( {spacing.base} * {spacing.scaleFactor} )",
-      "type": "spacing"
-    },
-    "xl": {
-      "value": "roundTo( {spacing.base} * {spacing.scaleFactor}^2 )",
-      "type": "spacing"
-    },
-    "xxl": {
-      "value": "roundTo( {spacing.base} * {spacing.scaleFactor}^3 )",
-      "type": "spacing"
-    }
-  },
   "radius": {
     "xs": {
       "value": "2",
