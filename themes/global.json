@@ -9,6 +9,12 @@
         "value": "#ffffff",
         "type": "color"
       }
+    },
+    "primary": {
+      "main": {
+        "value": "#560dd3",
+        "type": "color"
+      }
     }
   }
 }
