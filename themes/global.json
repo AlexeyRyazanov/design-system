@@ -1,6 +1,6 @@
 {
   "base": {
-    "value": "16",
+    "value": "26",
     "type": "spacing"
   },
   "scale": {
@@ -37,7 +37,7 @@
       "type": "borderRadius"
     },
     "sm": {
-      "value": "4",
+      "value": "16",
       "type": "borderRadius"
     },
     "md": {
@@ -152,7 +152,7 @@
     },
     "primary": {
       "main": {
-        "value": "#0B08C2",
+        "value": "#db0747",
         "type": "color"
       },
       "light": {
