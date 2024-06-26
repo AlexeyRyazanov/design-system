@@ -1,6 +1,6 @@
 {
   "base": {
-    "value": "16",
+    "value": "26",
     "type": "spacing"
   },
   "scale": {
@@ -37,7 +37,7 @@
       "type": "borderRadius"
     },
     "sm": {
-      "value": "4",
+      "value": "16",
       "type": "borderRadius"
     },
     "md": {
@@ -123,7 +123,7 @@
         "type": "color"
       },
       "icon-primary": {
-        "value": "$palette.primary.main",
+        "value": "{palette.primary.main}",
         "type": "color"
       },
       "icon-secondary": {
@@ -152,11 +152,11 @@
     },
     "primary": {
       "main": {
-        "value": "#0B08C2",
+        "value": "#d18110",
         "type": "color"
       },
       "light": {
-        "value": "$palette.primary.main",
+        "value": "{palette.primary.main}",
         "type": "color",
         "$extensions": {
           "studio.tokens": {
@@ -187,7 +187,7 @@
           "studio.tokens": {
             "modify": {
               "type": "lighten",
-              "value": "1 - ($color.grey-step) * 0.1",
+              "value": "1 - {grey-step} * 0.1",
               "space": "hsl"
             }
           }
@@ -200,7 +200,7 @@
           "studio.tokens": {
             "modify": {
               "type": "lighten",
-              "value": "1 - ($color.grey-step) * 0.25",
+              "value": "1 - {grey-step} * 0.25",
               "space": "hsl"
             }
           }
@@ -213,7 +213,7 @@
           "studio.tokens": {
             "modify": {
               "type": "lighten",
-              "value": "1 - ($color.grey-step) * 0.5",
+              "value": "1 - {grey-step} * 0.5",
               "space": "hsl"
             }
           }
@@ -226,7 +226,7 @@
           "studio.tokens": {
             "modify": {
               "type": "lighten",
-              "value": "1 - $color.grey-step",
+              "value": "1 - {grey-step} ",
               "space": "hsl"
             }
           }
@@ -239,7 +239,7 @@
           "studio.tokens": {
             "modify": {
               "type": "lighten",
-              "value": "1 - {color.grey-step} * 1.5",
+              "value": "1 - {grey-step} * 1.5",
               "space": "hsl"
             }
           }
@@ -252,7 +252,7 @@
           "studio.tokens": {
             "modify": {
               "type": "lighten",
-              "value": "1 - {color.grey-step} * 2",
+              "value": "1 - {grey-step} * 2",
               "space": "hsl"
             }
           }
@@ -265,7 +265,7 @@
           "studio.tokens": {
             "modify": {
               "type": "lighten",
-              "value": "1 - {color.grey-step} * 3",
+              "value": "1 - {grey-step} * 3",
               "space": "hsl"
             }
           }
@@ -278,7 +278,7 @@
           "studio.tokens": {
             "modify": {
               "type": "lighten",
-              "value": "1 - {color.grey-step} * 5",
+              "value": "1 - {grey-step} * 5",
               "space": "hsl"
             }
           }
@@ -295,7 +295,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.grey-step} * 2",
+              "value": "{grey-step} * 2",
               "space": "hsl"
             }
           }
@@ -308,7 +308,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.grey-step} * 3",
+              "value": "{grey-step} * 3",
               "space": "hsl"
             }
           }
@@ -321,7 +321,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.grey-step} * 4",
+              "value": "{grey-step} * 4",
               "space": "hsl"
             }
           }
@@ -334,7 +334,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.grey-step} * 5",
+              "value": "{grey-step} * 5",
               "space": "hsl"
             }
           }
@@ -353,7 +353,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.darkmode-coeff} + ($color.grey-step) * 0.1",
+              "value": "{darkmode-coeff} + {grey-step} * 0.1",
               "space": "hsl"
             }
           }
@@ -366,7 +366,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.darkmode-coeff} + ($color.grey-step) * 0.5",
+              "value": "{darkmode-coeff} + {grey-step} * 0.5",
               "space": "hsl"
             }
           }
@@ -379,7 +379,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.darkmode-coeff} + $color.grey-step",
+              "value": "{darkmode-coeff} + {grey-step} ",
               "space": "hsl"
             }
           }
@@ -392,7 +392,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.darkmode-coeff}  + {color.grey-step} * 1.5",
+              "value": "{darkmode-coeff}  + {grey-step} * 1.5",
               "space": "hsl"
             }
           }
@@ -405,7 +405,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.darkmode-coeff}  + {color.grey-step} * 2",
+              "value": "{darkmode-coeff}  + {grey-step} * 2",
               "space": "hsl"
             }
           }
@@ -418,7 +418,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.darkmode-coeff}  + {color.grey-step} * 2.5",
+              "value": "{darkmode-coeff}  + {grey-step} * 2.5",
               "space": "hsl"
             }
           }
@@ -431,7 +431,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.darkmode-coeff}  + {color.grey-step} * 5",
+              "value": "{darkmode-coeff}  + {grey-step} * 5",
               "space": "hsl"
             }
           }
@@ -457,7 +457,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.grey-step} * 2",
+              "value": "{grey-step} * 2",
               "space": "hsl"
             }
           }
@@ -470,7 +470,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.grey-step} * 3",
+              "value": "{grey-step} * 3",
               "space": "hsl"
             }
           }
@@ -483,7 +483,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.grey-step} * 4",
+              "value": "{grey-step} * 4",
               "space": "hsl"
             }
           }
@@ -496,7 +496,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "{color.grey-step} * 5",
+              "value": "{grey-step} * 5",
               "space": "hsl"
             }
           }
@@ -509,7 +509,7 @@
         "type": "color"
       },
       "bg": {
-        "value": "$palette.success.main",
+        "value": "{palette.success.main}",
         "type": "color",
         "$extensions": {
           "studio.tokens": {
@@ -528,7 +528,7 @@
         "type": "color"
       },
       "bg": {
-        "value": "$palette.warning.main",
+        "value": "{palette.warning.main}",
         "type": "color",
         "$extensions": {
           "studio.tokens": {
@@ -547,7 +547,7 @@
         "type": "color"
       },
       "bg": {
-        "value": "$palette.error.main",
+        "value": "{palette.error.main}",
         "type": "color",
         "$extensions": {
           "studio.tokens": {
@@ -566,7 +566,7 @@
         "type": "color"
       },
       "bg": {
-        "value": "$palette.info.main",
+        "value": "{palette.info.main}",
         "type": "color",
         "$extensions": {
           "studio.tokens": {
@@ -952,18 +952,6 @@
     "regular": {
       "value": "Regular",
       "type": "fontWeights"
-    },
-    "medium": {
-      "value": "Medium",
-      "type": "fontWeights"
-    },
-    "semibold": {
-      "value": "Semibold",
-      "type": "fontWeights"
-    },
-    "bold": {
-      "value": "Bold",
-      "type": "fontWeights"
     }
   },
   "typography": {
@@ -971,7 +959,7 @@
       "B1": {
         "value": {
           "fontFamily": "{fontFamily.body}",
-          "fontWeight": "{fontWeight.regular}",
+          "fontWeight": "Regular",
           "lineHeight": "{lineHeight.body}",
           "fontSize": "{fontSize.md}"
         },
@@ -980,7 +968,7 @@
       "B1 Underlined": {
         "value": {
           "fontFamily": "{fontFamily.body}",
-          "fontWeight": "{fontWeight.regular}",
+          "fontWeight": "Regular",
           "lineHeight": "{lineHeight.body}",
           "fontSize": "{fontSize.md}",
           "textDecoration": "underline"
@@ -990,7 +978,7 @@
       "B1 Medium": {
         "value": {
           "fontFamily": "{fontFamily.body}",
-          "fontWeight": "{fontWeight.medium}",
+          "fontWeight": "Medium",
           "lineHeight": "{lineHeight.body}",
           "fontSize": "{fontSize.md}"
         },
@@ -999,7 +987,7 @@
       "B1 Medium Underline": {
         "value": {
           "fontFamily": "{fontFamily.body}",
-          "fontWeight": "{fontWeight.medium}",
+          "fontWeight": "Medium",
           "lineHeight": "{lineHeight.body}",
           "fontSize": "{fontSize.md}",
           "textDecoration": "underline"
@@ -1009,7 +997,7 @@
       "B1 SemiBold": {
         "value": {
           "fontFamily": "{fontFamily.body}",
-          "fontWeight": "{fontWeight.semibold}",
+          "fontWeight": "Semibold",
           "lineHeight": "{lineHeight.body}",
           "fontSize": "{fontSize.md}"
         },
@@ -1018,27 +1006,17 @@
       "B1 SemiBold Underline": {
         "value": {
           "fontFamily": "{fontFamily.body}",
-          "fontWeight": "{fontWeight.semibold}",
+          "fontWeight": "Semibold",
           "lineHeight": "{lineHeight.body}",
           "fontSize": "{fontSize.md}",
           "textDecoration": "underline"
         },
         "type": "typography"
       },
-      "B1 Mono": {
-        "value": {
-          "fontFamily": "{fontFamily.mono-azeret}",
-          "fontWeight": "{fontWeight.regular}",
-          "lineHeight": "{lineHeight.body}",
-          "fontSize": "{fontSize.md}",
-          "letterSpacing": "-5%"
-        },
-        "type": "typography"
-      },
       "B2": {
         "value": {
           "fontFamily": "{fontFamily.body}",
-          "fontWeight": "{fontWeight.regular}",
+          "fontWeight": "Regular",
           "fontSize": "{fontSize.sm}",
           "lineHeight": "{lineHeight.body}"
         },
@@ -1047,7 +1025,7 @@
       "B2 Underline": {
         "value": {
           "fontFamily": "{fontFamily.body}",
-          "fontWeight": "{fontWeight.regular}",
+          "fontWeight": "Regular",
           "fontSize": "{fontSize.sm}",
           "lineHeight": "{lineHeight.body}",
           "textDecoration": "underline"
@@ -1057,7 +1035,7 @@
       "B2 Medium": {
         "value": {
           "fontFamily": "{fontFamily.body}",
-          "fontWeight": "{fontWeight.medium}",
+          "fontWeight": "Medium",
           "fontSize": "{fontSize.sm}",
           "lineHeight": "{lineHeight.body}"
         },
@@ -1066,7 +1044,7 @@
       "B2 SemiBold": {
         "value": {
           "fontFamily": "{fontFamily.body}",
-          "fontWeight": "{fontWeight.semibold}",
+          "fontWeight": "Semibold",
           "fontSize": "{fontSize.sm}",
           "lineHeight": "{lineHeight.body}"
         },
@@ -1075,7 +1053,7 @@
       "B3": {
         "value": {
           "fontFamily": "{fontFamily.body}",
-          "fontWeight": "{fontWeight.medium}",
+          "fontWeight": "Medium",
           "fontSize": "{fontSize.xs}",
           "lineHeight": "120%"
         },
@@ -1084,7 +1062,7 @@
       "B3 SemiBold": {
         "value": {
           "fontFamily": "{fontFamily.body}",
-          "fontWeight": "{fontWeight.semibold}",
+          "fontWeight": "Semibold",
           "fontSize": "{fontSize.xs}",
           "lineHeight": "120%"
         },
@@ -1095,7 +1073,7 @@
       "H1": {
         "value": {
           "fontFamily": "{fontFamily.headings}",
-          "fontWeight": "{fontWeight.bold}",
+          "fontWeight": "Bold",
           "lineHeight": "{lineHeight.headings}",
           "fontSize": "{fontSize.xl}"
         },
@@ -1104,7 +1082,7 @@
       "H2": {
         "value": {
           "fontFamily": "{fontFamily.headings}",
-          "fontWeight": "{fontWeight.bold}",
+          "fontWeight": "Bold",
           "lineHeight": "{lineHeight.headings}",
           "fontSize": "{fontSize.lg}"
         },
@@ -1113,21 +1091,9 @@
       "H3": {
         "value": {
           "fontFamily": "{fontFamily.headings}",
-          "fontWeight": "{fontWeight.bold}",
+          "fontWeight": "Bold",
           "lineHeight": "20",
           "fontSize": "{fontSize.md}"
-        },
-        "type": "typography"
-      }
-    },
-    "special": {
-      "input-big": {
-        "value": {
-          "fontFamily": "{fontFamily.mono}",
-          "fontWeight": "{fontWeight.regular}",
-          "lineHeight": "100%",
-          "fontSize": "{fontSize.lg}",
-          "letterSpacing": "1%"
         },
         "type": "typography"
       }
@@ -1151,14 +1117,6 @@
     "headings": {
       "value": "Proxima Nova",
       "type": "fontFamilies"
-    },
-    "mono": {
-      "value": "Roboto Mono",
-      "type": "fontFamilies"
-    },
-    "mono-azeret": {
-      "value": "Azeret Mono",
-      "type": "fontFamilies"
     }
   },
   "border": {
@@ -1177,14 +1135,12 @@
       "type": "other"
     }
   },
-  "color": {
-    "grey-step": {
-      "value": "0.15",
-      "type": "other"
-    },
-    "darkmode-coeff": {
-      "value": "0.6",
-      "type": "other"
-    }
+  "grey-step": {
+    "value": "0.15",
+    "type": "other"
+  },
+  "darkmode-coeff": {
+    "value": "0.6",
+    "type": "other"
   }
 }
